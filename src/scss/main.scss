@@ -1,13 +1,159 @@
 @import "~normalize.css";
-
 @import "_variables";
 @import "modules/hello.scss";
+html{
+  
 
-body {
+}
+
+body{
   background: $wtf;
+  color: #fff;  
+  flex-direction: column; 
+ 
+  max-width: 1600px;
+  height: 100vh;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.header{   
+  
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;  
+  height: 100px;
+  width: 1fr;   
+  margin-top: 40px; 
+  
+}
+.hamburger{
+  position: absolute;
+  color: #fff;
+  top: 19px;
+  right: 25px;
+  border: none;
+  background: none;
+  justify-content: flex-end;
+}
+.box-1{
+   
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center;
+  flex-wrap: wrap;   
+  height: 96px;
+  width: 1385px; 
+   
+}
+.box-2{
+  background: rgba(255, 255, 255, 0.04); 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  flex-wrap: wrap;  
+  height: 96px;
+  width: 830px;   
+  
+}
+.box-P{
+   
   color: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  align-items: center;
+  flex-wrap: wrap; 
+  height: 19px;
+  width: 66px;
+  margin: 16px; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px; 
+}
+.box-N{
+  
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  height: 19px;
+  max-width: 100px;
+  margin: 16px;
+  min-width: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px; 
+}
+
+.box-line{  
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;  
+  height: 3px;
+  width: 100%;    
+}
+.box-long{  
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  
+  height: 1px;
+  
+  width: 200px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding: 10;
+}
+
+
+
+.main{
+  flex-direction: column;
+  display: grid;
+    grid-template-areas:
+      ". article article article article article . . . . .  ."
+      ". article article article article article . . . . . ."
+      ". article article article article article . . . . . ."
+      ". article article article article article . . . . . ."
+      "............"
+      ". . . . . . . aside aside aside aside ."
+      ". . . . . . . aside aside aside aside ."
+      ". . . . . . . aside aside aside aside .";
+    /*ustawiamy w ile kolumn ma być w wierszu*/
+    grid-template-columns: 16px repeat(10, 1fr) 16px;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-rows: 100px;
+    margin: 16px;
+}
+.article {
+  background: tomato;
+  grid-column-start: 1;
+  grid-column-end: span 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.aside {
+  background: tomato;
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 8;
 }
