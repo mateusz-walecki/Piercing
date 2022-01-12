@@ -136,7 +136,7 @@ body{
   min-height: 300px;
   width: 100%;
   color: tomato;
-  margin: 200px auto;
+  margin: 20px;
   padding: 16px;
 }
 
@@ -146,7 +146,7 @@ body{
   flex-wrap: wrap; 
   justify-content: space-around;
   width: 100%;
-  margin: 16px;
+  margin: 200px auto;
   padding: 16px;
   
 }
@@ -201,14 +201,38 @@ body{
 h1 {
   color: white;
   font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 60px;
-  font-weight: 900;  
-  text-align: justify; 
+  font-size: 40px;
+  font-weight: 700;  
+  text-align: center; 
+  color: #EDDA90;
 }
   h2 {
     color: white;
     font-family: "Akaya Kanadaka", sans-serif;
     font-size: 30px;
-    font-weight: 500;    
+    font-weight: 400;    
     text-align: justify; 
+  }
+  .quote {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    margin: 10 auto; 
+  }
+  .quote-inside {
+    background: #666;
+    box-sizing: border-box;       
+    height: 350px;
+    width: 350px;
+    margin: 25px auto 25px auto;
+    overflow: auto;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #EDDA90; 
+    text-align: center;
+    font-size: 25px;
+    font-family: "Akaya Kanadaka", sans-serif;
+    color: #fff;
+    top: 50%;
   }
