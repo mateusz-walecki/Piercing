@@ -4,42 +4,32 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
-
-html{  
-
+html {
 }
 
-body{
-  background: $wtf;     
-  min-height: 100vh;  
+body {
+  background: $wtf;
+  min-height: 100vh;
   align-items: center;
-  justify-content: center; 
-  
+  justify-content: center;
 }
-.header{   
+.header {
   display: flex;
   margin: 0 auto;
   top: 0;
   margin: 0px;
   padding: 0px;
-  width: 100%; 
+  width: 100%;
   position: fixed;
-  z-index: 10; 
-  top: 0; 
+  z-index: 10;
+  top: 0;
   background: #666;
-  min-height: 96px; 
+  min-height: 96px;
   justify-content: space-around;
   align-items: center;
-  box-sizing: border-box;    
+  box-sizing: border-box;
 }
-.box-primary {
-  max-width: 1600px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  top: 70px;
-}
-.hamburger{
+.hamburger {
   position: absolute;
   color: #fff;
   top: 19px;
@@ -49,52 +39,154 @@ body{
   justify-content: flex-end;
 }
 
-.navigation{   
+.navigation {
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
   height: 96px;
-  width: 1385px;    
+  width: 1385px;
   margin: 0 auto;
-  
 }
 
-.navigation-2{
-  background: rgba(161, 74, 74, 0.04); 
+.navigation-2 {
+  background: rgba(161, 74, 74, 0.04);
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   height: 96px;
-  width: 540px;     
+  width: 540px;
+}
+.box-primary {
+  max-width: 1600px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 70px;
+}
+.top-box {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 
-.box-P{
-   
+.description {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 300px;
+  max-width: 900px;
+  color: tomato;
+  margin: 20px auto;
+  padding: 16px;
+}
+.logo {
+}
+.img-logo {
+  max-width: 100%;
+  height: auto;
+  padding: 10;
+  overflow: auto;
+  transform: translateY(25%);
+}
+
+.about {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+  width: 100%;
+  color: tomato;
+  padding: 50px;
+}
+h1 {
+  color: white;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #edda90;
+  margin: 16px;
+  padding: 16px;
+}
+h2 {
+  color: white;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 16px;
+  padding: 16px;
+}
+.quote {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  margin: 10px auto;
+}
+.quote-inside {  
+  box-sizing: border-box;
+  height: 350px;
+  width: 350px;
+  margin: 25px auto 25px auto;
+  overflow: auto;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #edda90;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Akaya Kanadaka", sans-serif;
+  color: #fff;
+  top: 50%;
+}
+
+.box1 {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 200px auto;
+  padding: 16px;
+}
+
+.box2 {
+  box-sizing: border-box;
+  display: inline-block;
+  justify-content: space-around;
+  max-width: 600px;
+  overflow: auto;
+}
+
+
+.box-P {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   height: 19px;
   min-width: 100px;
   max-width: 100px;
-  margin: 16px; 
+  margin: 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 2.7px; 
+  letter-spacing: 2.7px;
 }
-.box-N{
-  
+.box-N {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   height: 19px;
   max-width: 100px;
   margin: 16px;
@@ -104,24 +196,23 @@ body{
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 2.7px; 
+  letter-spacing: 2.7px;
 }
 
-.box-line{  
+.box-line {
   background: #fff;
   display: flex;
   justify-content: center;
-  align-items: baseline;  
+  align-items: baseline;
   height: 3px;
-  width: 100%;    
+  width: 100%;
 }
 
-.main{
+.main {
   margin: auto;
   box-sizing: border-box;
   display: inline-block;
 }
-
 
 .img-fluid {
   max-width: 100%;
@@ -129,59 +220,27 @@ body{
   padding: 10;
   overflow: auto;
 }
-.about{
-  display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap;
-  min-height: 300px;
-  width: 100%;
-  color: tomato;
-  margin: 20px;
-  padding: 16px;
-}
-
-.box1 {
-  box-sizing: border-box;
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-around;
-  width: 100%;
-  margin: 200px auto;
-  padding: 16px;
-  
-}
-
-.box2 {  
-  box-sizing: border-box;
-  display: inline-block;  
-  justify-content: space-around; 
-  max-width: 600px;  
-  overflow: auto;
-   
-}
-  
 
 
-  
 
-.grid{
-  flex-direction: column; 
+.grid {
+  flex-direction: column;
   display: grid;
-    grid-template-areas:
-      ". article article article article article . . . . .  ."
-      ". article article article article article . . . . . ."
-      ". article article article article article . . . . . ."
-      ". article article article article article . . . . . ."
-      "............"
-      ". . . . . . . aside aside aside aside ."
-      ". . . . . . . aside aside aside aside ."
-      ". . . . . . . aside aside aside aside .";
-    /*ustawiamy w ile kolumn ma być w wierszu*/
-    grid-template-columns: 16px repeat(10, 1fr) 16px;
-    column-gap: 16px;
-    row-gap: 16px;
-    grid-template-rows: 100px;
-    margin: 16px;
+  grid-template-areas:
+    ". article article article article article . . . . .  ."
+    ". article article article article article . . . . . ."
+    ". article article article article article . . . . . ."
+    ". article article article article article . . . . . ."
+    "............"
+    ". . . . . . . aside aside aside aside ."
+    ". . . . . . . aside aside aside aside ."
+    ". . . . . . . aside aside aside aside .";
+  /*ustawiamy w ile kolumn ma być w wierszu*/
+  grid-template-columns: 16px repeat(10, 1fr) 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+  grid-template-rows: 100px;
+  margin: 16px;
 }
 .article {
   background: tomato;
@@ -197,42 +256,3 @@ body{
   grid-row-start: 5;
   grid-row-end: 8;
 }
-
-h1 {
-  color: white;
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 40px;
-  font-weight: 700;  
-  text-align: center; 
-  color: #EDDA90;
-}
-  h2 {
-    color: white;
-    font-family: "Akaya Kanadaka", sans-serif;
-    font-size: 30px;
-    font-weight: 400;    
-    text-align: justify; 
-  }
-  .quote {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100px;
-    margin: 10 auto; 
-  }
-  .quote-inside {
-    background: #666;
-    box-sizing: border-box;       
-    height: 350px;
-    width: 350px;
-    margin: 25px auto 25px auto;
-    overflow: auto;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 10px 10px 10px #EDDA90; 
-    text-align: center;
-    font-size: 25px;
-    font-family: "Akaya Kanadaka", sans-serif;
-    color: #fff;
-    top: 50%;
-  }
