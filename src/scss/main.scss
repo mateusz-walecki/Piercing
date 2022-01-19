@@ -56,8 +56,55 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 96px;
-  width: 540px;
+  width: 740px;
 }
+a {
+  text-decoration: none; 
+}
+
+.box-P {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 19px;
+ 
+  max-width: 150px;
+  margin: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+.box-line {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 3px;
+  width: 100%;
+}
+.box-N {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 19px;
+  max-width: 100px;
+  margin: 16px;
+  min-width: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
 .box-primary {
   max-width: 1600px;
   display: block;
@@ -122,28 +169,7 @@ h2 {
   margin: 16px;
   padding: 16px;
 }
-.quote {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100px;
-  margin: 10px auto;
-}
-.quote-inside {  
-  box-sizing: border-box;
-  height: 350px;
-  width: 350px;
-  margin: 25px auto 25px auto;
-  overflow: auto;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 5px 5px 5px #edda90;
-  text-align: center;
-  font-size: 25px;
-  font-family: "Akaya Kanadaka", sans-serif;
-  color: #fff;
-  top: 50%;
-}
+
 
 .box1 {
   box-sizing: border-box;
@@ -164,49 +190,8 @@ h2 {
 }
 
 
-.box-P {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 19px;
-  min-width: 100px;
-  max-width: 100px;
-  margin: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-}
-.box-N {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 19px;
-  max-width: 100px;
-  margin: 16px;
-  min-width: 100px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-}
 
-.box-line {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  height: 3px;
-  width: 100%;
-}
+
 
 .main {
   margin: auto;
@@ -255,4 +240,49 @@ h2 {
   grid-column-end: 12;
   grid-row-start: 5;
   grid-row-end: 8;
+}
+
+.footer{
+  width: 100%;
+  min-height: 500px;
+  background-color: #666;
+}
+.quote {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  margin: 10px auto;
+}
+.quote-inside {  
+  box-sizing: border-box;
+  height: 350px;
+  width: 350px;
+  margin: 25px auto 25px auto;
+  overflow: auto;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #edda90;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Akaya Kanadaka", sans-serif;
+  color: #fff;
+  top: 50%;
+}
+
+.statute {
+  color: #fff;  
+  display: inline-block;
+  overflow: auto;
+  padding: 20px;  
+  margin: 25px auto 25px auto;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 20px;
+  
+}
+ul{
+  list-style-type: disc;
+}
+li{
+  margin: 10px 0px;
 }
