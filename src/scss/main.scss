@@ -151,7 +151,6 @@ a {
   padding: 50px;
 }
 h1 {
-  color: white;
   font-family: "Akaya Kanadaka", sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -177,7 +176,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  margin: 200px auto;
+  margin: 200px auto 50px auto;
   padding: 16px;
 }
 
@@ -197,6 +196,7 @@ h2 {
   margin: auto;
   box-sizing: border-box;
   display: inline-block;
+  width: 100%;
 }
 
 .img-fluid {
@@ -212,35 +212,44 @@ h2 {
   flex-direction: column;
   display: grid;
   grid-template-areas:
-    ". article article article article article . . . . .  ."
-    ". article article article article article . . . . . ."
-    ". article article article article article . . . . . ."
-    ". article article article article article . . . . . ."
-    "............"
-    ". . . . . . . aside aside aside aside ."
-    ". . . . . . . aside aside aside aside ."
-    ". . . . . . . aside aside aside aside .";
+    ". article article article . center center center . aside aside aside ."
+    ". article article article . center center center . aside aside aside ."
+    ". article article article . center center center . aside aside aside ."
+    ". article article article . center center center . aside aside aside ."
+    ". article article article . center center center . aside aside aside ."
+    ". article article article . center center center . aside aside aside ."
+    ". price price price price price price price . exchange exchange exchange .";
   /*ustawiamy w ile kolumn ma być w wierszu*/
-  grid-template-columns: 16px repeat(10, 1fr) 16px;
+  grid-template-columns: 16px repeat(11, 1fr) 16px;
   column-gap: 16px;
   row-gap: 16px;
-  grid-template-rows: 100px;
+  grid-template-rows: minmax(100px, auto);
   margin: 16px;
+  width: 100%;
 }
+
 .article {
-  background: tomato;
-  grid-column-start: 1;
-  grid-column-end: span 5;
+  background: white;
+  grid-column-start: 2;
+  grid-column-end: span 3;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 6;
+}
+.center{
+  background: white;
+  grid-column-start: 6;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
 }
 .aside {
-  background: tomato;
-  grid-column-start: 7;
-  grid-column-end: 12;
-  grid-row-start: 5;
-  grid-row-end: 8;
+  background: white;
+  grid-column-start: 10;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
 }
+
 
 .footer{
   width: 100%;
@@ -277,12 +286,12 @@ h2 {
   padding: 20px;  
   margin: 25px auto 25px auto;
   font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   
 }
 ul{
   list-style-type: disc;
 }
 li{
-  margin: 10px 0px;
+  margin: 16px 0px;
 }

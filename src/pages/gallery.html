@@ -1,191 +1,288 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gallery</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKAZA PIERCING</title>
+  <meta name="description" content="Your project description" />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <!-- uncomment the line below to enable PWA  -->
+  <!-- <link rel="manifest" href="manifest.json" /> -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
-    
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-  </head>
-  <body>
-    <header class="header">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 
 
-      <button class="hamburger hamburger--js" aria-label="Open menu"> MENU </button>
-  
-      <div class="navigation">
-  
-        <div class="navigation-2">
-          <a class="box-P" href="index.html">
-            O NAS
-            <div class="box-line"></div>
-          </a>
-          <a class="box-N" href="statute.html"> REGULAMIN </a>
-          <a class="box-N" href="gallery.html"> GALERIA </a>        
-          <a class="box-N" href="gallery.html"> CENNIK </a>
-          <a class="box-N" href="index.html"> KONTAKT </a>
-        </div>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+
+
+    <button class="hamburger hamburger--js" aria-label="Open menu"> MENU </button>
+
+    <div class="navigation">
+
+      <div class="navigation-2">
+        <a class="box-P" href="index.html">
+          O NAS
+          <div class="box-line"></div>
+        </a>
+        <a class="box-N" href="statute.html"> REGULAMIN </a>
+        <a class="box-N" href="gallery.html"> GALERIA </a>        
+        <a class="box-N" href="price.html"> CENNIK </a>
+        <a class="box-N" href="index.html"> KONTAKT </a>
       </div>
-    </header>
-    
-    <div class="box-primary">
-      
-      
-        <!--
-          <nav class="navigation navigation--js">
-          <a class="navigation__link" hrev="O NAS.html">O NAS</a>
-          <a class="navigation__link" hrev="Galeria.html">Galeria</a>
-        </nav>
-      -->
-      </header>
-
-      <main class="main">
-        <section class="box1">
-
-
-          <div class="box2">
-            <div class="glide">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide"><img src="../assets/img/A.png" class="img-fluid" alt="img1"></li>
-                  <li class="glide__slide"><img src="../assets/img/B.png" class="img-fluid" alt="img2"></li>
-                  <li class="glide__slide"> <img src="../assets/img/C.png" class="img-fluid" alt="img3"></li>
-                </ul>
-                <div class="glide__track" data-glide-el="track">...</div>
-  
-                <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
-                      src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
-                      src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="box2">
-            <div class="glide">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide"><img src="../assets/img/4.jpg" class="img-fluid" alt="img11"></li>
-                  <li class="glide__slide"><img src="../assets/img/5.png" class="img-fluid" alt="img22"></li>
-                  <li class="glide__slide"> <img src="../assets/img/6.png" class="img-fluid" alt="img33"></li>
-                </ul>
-                <div class="glide__track" data-glide-el="track">...</div>
-  
-                <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
-                      src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
-                      src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="box2">
-            <div class="glide">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide"><img src="../assets/img/A.png" class="img-fluid" alt="img1"></li>
-                  <li class="glide__slide"><img src="../assets/img/B.png" class="img-fluid" alt="img2"></li>
-                  <li class="glide__slide"> <img src="../assets/img/C.png" class="img-fluid" alt="img3"></li>
-                </ul>
-                <div class="glide__track" data-glide-el="track">...</div>
-  
-                <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
-                      src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
-                      src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="box2">
-            <div class="glide">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide"><img src="../assets/img/4.jpg" class="img-fluid" alt="img11"></li>
-                  <li class="glide__slide"><img src="../assets/img/5.png" class="img-fluid" alt="img22"></li>
-                  <li class="glide__slide"> <img src="../assets/img/6.png" class="img-fluid" alt="img33"></li>
-                </ul>
-                <div class="glide__track" data-glide-el="track">...</div>
-  
-                <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
-                      src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
-                      src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="box2">
-            <div class="glide">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide"><img src="../assets/img/A.png" class="img-fluid" alt="img1"></li>
-                  <li class="glide__slide"><img src="../assets/img/B.png" class="img-fluid" alt="img2"></li>
-                  <li class="glide__slide"> <img src="../assets/img/C.png" class="img-fluid" alt="img3"></li>
-                </ul>
-                <div class="glide__track" data-glide-el="track">...</div>
-  
-                <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
-                      src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
-                      src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="box2">
-            <div class="glide">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li class="glide__slide"><img src="../assets/img/4.jpg" class="img-fluid" alt="img11"></li>
-                  <li class="glide__slide"><img src="../assets/img/5.png" class="img-fluid" alt="img22"></li>
-                  <li class="glide__slide"> <img src="../assets/img/6.png" class="img-fluid" alt="img33"></li>
-                </ul>
-                <div class="glide__track" data-glide-el="track">...</div>
-  
-                <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
-                      src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
-                      src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-  
-        </section> 
-      </main>
     </div>
-  </body>
+  </header>
+
+
+
+
+  <div class="box-primary">
+    
+
+    <main class="main">
+
+       
+      
+      <section class="box1">
+
+
+        <div class="box2">
+          <h1>LOBE - UPPER LOBE</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(1) LOBE-UPPER LOBE/lobe 12 face.png" class="img-fluid" alt="img1"></li>
+                <li class="glide__slide"><img src="../assets/img/(1) LOBE-UPPER LOBE/lobe 16 face.png" class="img-fluid" alt="img2"></li>
+                <li class="glide__slide"> <img src="../assets/img/(1) LOBE-UPPER LOBE/lobe 4 face.png" class="img-fluid" alt="img3"></li>
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>HELIX</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(3) HELIX/helix 10 face.png" class="img-fluid" alt="img11"></li>
+                <li class="glide__slide"><img src="../assets/img/(3) HELIX/helix 2 face.png" class="img-fluid" alt="img22"></li>
+                <li class="glide__slide"> <img src="../assets/img/(3) HELIX/helix 6 face.png" class="img-fluid" alt="img33"></li>
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>FORWARD HELIX</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(4) FORWARD HELIX/forward helix 3 face.png" class="img-fluid" alt="img1"></li>
+                <li class="glide__slide"><img src="../assets/img/(4) FORWARD HELIX/forward helix 4 face.png"  class="img-fluid" alt="img2"></li>
+                <li class="glide__slide"> <img src="../assets/img/(4) FORWARD HELIX/forward helix face.png"  class="img-fluid" alt="img3"></li>
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>INDUSTRIAL</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(5) INDUSTRIAL/industrial 1 face.png" class="img-fluid" alt="img11"></li>
+                <li class="glide__slide"><img src="../assets/img/(5) INDUSTRIAL/industrial 2 face.png" class="img-fluid" alt="img22"></li>
+                <li class="glide__slide"> <img src="../assets/img/(5) INDUSTRIAL/industrial 3 face.png" class="img-fluid" alt="img33"></li>
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>TARGUS</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(6) TRAGUS/tragus 1 face.png" class="img-fluid" alt="img1"></li>
+                <li class="glide__slide"><img src="../assets/img/(6) TRAGUS/tragus 2 face.png" class="img-fluid" alt="img2"></li>
+                <li class="glide__slide"> <img src="../assets/img/(6) TRAGUS/tragus 3 face.png" class="img-fluid" alt="img3"></li>
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>ROOK</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(7) ROOK/rook 2 face.png" class="img-fluid" alt="img11"></li>
+                <li class="glide__slide"><img src="../assets/img/(7) ROOK/Rook fb 1.png" class="img-fluid" alt="img22"></li>                
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>CONCH</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(8) CONCH/conch 1 face.png" class="img-fluid" alt="img11"></li>
+                <li class="glide__slide"><img src="../assets/img/(8) CONCH/conch 4 face.png" class="img-fluid" alt="img22"></li> 
+                <li class="glide__slide"><img src="../assets/img/(8) CONCH/conch 6 face.png" class="img-fluid" alt="img22"></li>                
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>DAITH</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(9) DAITH/daith 2 face.png" class="img-fluid" alt="img11"></li>
+                <li class="glide__slide"><img src="../assets/img/(9) DAITH/daith 3 face.png" class="img-fluid" alt="img22"></li>                
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>NOSTRIL</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(13) NOSTRIL/nostril 13 face.png" class="img-fluid" alt="img11"></li>
+                <li class="glide__slide"><img src="../assets/img/(13) NOSTRIL/nostril 15 face.png"  class="img-fluid" alt="img22"></li> 
+                <li class="glide__slide"><img src="../assets/img/(13) NOSTRIL/nostril D-ring 4 face.png"   class="img-fluid" alt="img22"></li>                
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h1>SEPTUM</h1>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="../assets/img/(14) SEPTUM/septum 3 face.png"  class="img-fluid" alt="img22"></li>
+                <li class="glide__slide"><img src="../assets/img/(14) SEPTUM/septum 4 face.png" class="img-fluid" alt="img11"></li>
+                                              
+              </ul>
+              <div class="glide__track" data-glide-el="track">...</div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                    src="../assets/img/ArrowLeft.png" class="img-fluid" alt="left"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                    src="../assets/img/ArrowRight.png" class="img-fluid" alt="right"></button>
+              </div>
+            </div>
+          </div>
+        </div>      
+
+      </section>
+
+      <section>
+        <h1>Zobacz Nasz Cennik</h1>
+      </section>
+
+    </main>
+  </div>
+
+  </div>
+</body>
+
 </html>
