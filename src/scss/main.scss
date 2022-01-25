@@ -60,6 +60,8 @@ body {
 }
 a {
   text-decoration: none; 
+
+
 }
 
 .box-P {
@@ -205,22 +207,22 @@ h2 {
   padding: 10;
   overflow: auto;
 }
-
-
-
 .grid {
   flex-direction: column;
   display: grid;
   grid-template-areas:
-    ". article article article . center center center . aside aside aside ."
-    ". article article article . center center center . aside aside aside ."
-    ". article article article . center center center . aside aside aside ."
-    ". article article article . center center center . aside aside aside ."
-    ". article article article . center center center . aside aside aside ."
-    ". article article article . center center center . aside aside aside ."
-    ". price price price price price price price . exchange exchange exchange .";
+    " article article article . center center center . aside aside aside "
+    " article article article . center center center . aside aside aside "
+    " article article article . center center center . aside aside aside "
+    " article article article . center center center . aside aside aside "
+    " article article article . center center center . aside aside aside "
+    " article article article . center center center . aside aside aside "
+    "..........."
+    " price price price price price price price . exchange exchange exchange "
+    " price price price price price price price . exchange exchange exchange "
+    " price price price price price price price . exchange exchange exchange ";
   /*ustawiamy w ile kolumn ma być w wierszu*/
-  grid-template-columns: 16px repeat(11, 1fr) 16px;
+  grid-template-columns:  repeat(11, 1fr);
   column-gap: 16px;
   row-gap: 16px;
   grid-template-rows: minmax(100px, auto);
@@ -228,27 +230,57 @@ h2 {
   width: 100%;
 }
 
-.article {
-  background: white;
-  grid-column-start: 2;
+.article {  
+  grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: 6;
 }
 .center{
-  background: white;
-  grid-column-start: 6;
+  
+  grid-column-start: 5;
   grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: 6;
 }
 .aside {
-  background: white;
-  grid-column-start: 10;
+  
+  grid-column-start: 9;
   grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: 6;
 }
+.bottom-left{  
+  grid-column-start: 1;
+  grid-column-end: span 7;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+.exchange{  
+  grid-column-start: 9;
+  grid-column-end: span 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+.P1{
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  color: #edda90;
+  margin: 16px;
+  padding: 16px;
+}
+.P2{
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  margin: 16px;
+  padding: 16px;
+}
+
 
 
 .footer{
