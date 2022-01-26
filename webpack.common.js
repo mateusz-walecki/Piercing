@@ -8,6 +8,7 @@ module.exports = {
     gallery: "./src/js/index.js",
     statute:"./src/js/index.js",
     price:"./src/js/index.js",
+    contact:"./src/js/index.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -101,6 +102,12 @@ module.exports = {
       inject: true,
       chunks: ["index"],
       filename: "price.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/contact.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "contact.html",
     }),
   ],
 };
