@@ -3,220 +3,193 @@
 @import "modules/hello.scss";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
-
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Lobster&family=Noto+Serif+Display:ital,wght@1,700&display=swap');
 html {
+  
 }
-
+::after {
+  box-sizing: inherit;
+}
 body {
+  
   background: $wtf;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
 }
-.header {
-  display: flex;
-  margin: 0 auto;
-  top: 0;
-  margin: 0px;
-  padding: 0px;
+
+/*styles for all pages */
+.box-primary {    
   width: 100%;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  background: #666;
-  min-height: 96px;
-  justify-content: space-around;
-  align-items: center;
-  box-sizing: border-box;
-}
-.hamburger {
-  position: absolute;
-  color: #fff;
-  top: 19px;
-  right: 25px;
-  border: none;
-  background: none;
-  justify-content: flex-end;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex;     
   flex-wrap: wrap;
-  height: 96px;
-  width: 1385px;
-  margin: 0 auto;
+  top: 40px;
 }
 
-.navigation-2 {
-  background: rgba(161, 74, 74, 0.04);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 96px;
-  width: 740px;
-}
-a {
-  text-decoration: none; 
-
-
-}
-.phone{
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: #fff;
-  margin: 16px;
-  padding: 16px;
-}
-
-
-.box-P {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 19px;
- 
-  max-width: 150px;
-  margin: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-}
-.box-line {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  height: 3px;
-  width: 100%;
-}
-.box-N {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 19px;
-  max-width: 100px;
-  margin: 16px;
-  min-width: 100px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-}
-
-.box-primary {
-  max-width: 1600px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  top: 70px;
+.main {
+  width: 100%;  
+  margin: auto;  
 }
 .top-box {
-  box-sizing: border-box;
-  width: 100%;
+  width: 100%;  
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
-}
-
-.description {
-  display: flex;
+  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  min-height: 300px;
-  max-width: 900px;
-  color: tomato;
-  margin: 20px auto;
-  padding: 16px;
+  margin-top: 60px;  
+  min-height: 500px; 
 }
-.logo {
-}
-.img-logo {
-  max-width: 100%;
-  height: auto;
-  padding: 10;
-  overflow: auto;
-  transform: translateY(25%);
-}
-
-.about {
-  box-sizing: border-box;
-  width: 100%;
+.skaza-top {
+  width: 100%;  
   display: flex;
   flex-wrap: wrap;
-  min-height: 300px;
-  width: 100%;
-  color: tomato;
-  padding: 50px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;  
+  min-height: 300px; 
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 30px;
 }
 h1 {
   font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #edda90;
+  margin-bottom: 20px;
+  padding: 16px;
+}
+h2 {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin: 16px;
+  padding: 16px;
+}
+.logo {
+  display: block;
+  margin: 0px auto;
+  max-width: 230px;
+ 
+}
+.img-logo {   
+  height: auto;   
+  max-width: 100%;    
+  overflow: auto;
+}
+.P7 {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   color: #edda90;
   margin: 16px;
   padding: 16px;
 }
-h2 {
-  color: white;
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: justify;
-  margin: 16px;
-  padding: 16px;
-}
-
-
+/* styles for gallery page*/
 .box1 {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
+  width: 1200px;
   margin: 200px auto 50px auto;
   padding: 16px;
 }
-
-.box2 {
-  box-sizing: border-box;
-  display: inline-block;
-  justify-content: space-around;
-  max-width: 600px;
-  overflow: auto;
-}
-
-
-
-
-
-.main {
-  margin: auto;
-  box-sizing: border-box;
-  display: inline-block;
-  width: 100%;
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
   padding: 10;
   overflow: auto;
 }
+.box2 {
+  display: inline-block;
+  justify-content: space-around;
+  max-width: 200px;
+  overflow: auto;
+}
+/* styles for index page*/
+.description {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 300px;
+  max-width: 400px;
+  color: tomato;
+  margin: 20px auto;
+  padding: 16px;
+}
+.box-bright{
+  background: #f1ffe7;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  box-sizing: border-box; 
+}
+.about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+    
+}
+.P5{
+  color: black;
+  font-family: 'Domine', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 3em;
+  text-align: center;  
+  
+  max-width: 700px;
+  padding: 16px; 
+  box-sizing: border-box;
+  margin: auto;
+}
+.P6{
+  color: #fff;
+  font-family: 'Domine', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2em;
+  text-align: justify;  
+ 
+  padding: 16px; 
+  box-sizing: border-box;
+  margin: auto;
+}
+.quote {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  margin: 10px auto;
+  align-items: center;
+  min-height: 300px;
+}
+.quote-inside {
+  min-height: 150px;
+  max-width: 200px;
+  margin: 25px auto 25px auto;
+  overflow: auto;
+  border-radius: 5px;
+  padding: 20px;  
+  text-align: center;
+  font-size: 16px;
+  font-family: "Akaya Kanadaka", sans-serif;
+  color: #fff;
+  top: 50%;
+}
+.opinion{
+  width: 100%;    
+  flex-wrap: wrap;
+  min-height: 200px;
+}
+
+
+/* styles for price page*/
 .grid {
   flex-direction: column;
   display: grid;
@@ -232,47 +205,44 @@ h2 {
     " price price price price price price price . exchange exchange exchange "
     " price price price price price price price . exchange exchange exchange ";
   /*ustawiamy w ile kolumn ma być w wierszu*/
-  grid-template-columns:  repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   column-gap: 16px;
   row-gap: 16px;
   grid-template-rows: minmax(100px, auto);
   margin: 16px;
   width: 100%;
 }
-
-.article {  
+.article {
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: 6;
 }
-.center{
-  
+.center {
   grid-column-start: 5;
   grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: 6;
 }
 .aside {
-  
   grid-column-start: 9;
   grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: 6;
 }
-.bottom-left{  
+.bottom-left {
   grid-column-start: 1;
   grid-column-end: span 7;
   grid-row-start: 7;
   grid-row-end: 9;
 }
-.exchange{  
+.exchange {
   grid-column-start: 9;
   grid-column-end: span 3;
   grid-row-start: 7;
   grid-row-end: 9;
 }
-.P1{
+.P1 {
   font-family: "Akaya Kanadaka", sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -281,7 +251,7 @@ h2 {
   margin: 16px;
   padding: 16px;
 }
-.P2{
+.P2 {
   font-family: "Akaya Kanadaka", sans-serif;
   font-size: 25px;
   font-weight: 700;
@@ -290,59 +260,249 @@ h2 {
   margin: 16px;
   padding: 16px;
 }
-.P3{
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  text-align: left;
-  color: white;
-  margin: 16px;
-  padding: 16px;
+/* styles for statute page*/
+ul {
+  list-style-type: disc;
 }
-
-
-
-.footer{
+li {
+  margin: 16px 0px;
+}
+.footer {
   width: 100%;
   min-height: 500px;
   background-color: #666;
 }
-.quote {
-  box-sizing: border-box;
+.statute {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  overflow: auto;
+  padding: 20px;
+  margin: 25px auto 25px auto;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 16px;
+}
+/* styles for contact page*/
+.contact {
+  display: flex;
+  min-height: 500px;
+  flex-wrap: wrap;
+  padding: 16px;
+  justify-content: space-around;
+  
+  
+}
+.contact-2 {
+  display: inline-block; 
+  overflow: auto; 
+  padding: 20px;
+  margin: auto;
+}
+.bottom {
+  height: 70px;
   display: flex;
   flex-wrap: wrap;
-  min-height: 100px;
-  margin: 10px auto;
+  justify-content: space-around; 
+  align-items: center;
+  margin: 16px auto;
 }
-.quote-inside {  
+.social {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+  max-width: 250px;  
+}
+.media {
+  max-width: 50px;
+  max-height: 50px;
+  justify-content: space-between;
+}
+.phone {
+  color: #fff;
+  font-family: 'Domine', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: justify;  
+  max-width: 100px;
+  padding: 16px; 
   box-sizing: border-box;
-  height: 350px;
-  width: 350px;
+  margin: auto;
+}
+.map-box {
+  width: 100%;  
+  display: flex;  
+  justify-content: center;  
+  box-sizing: border-box; 
+  background: #f1ffe7;
+  height: 400px; 
+  flex-wrap: wrap;  
+}
+.map {  
+  width: 100%;
+  height: 100%;
+  margin: 0;  
+  
+}
+.P3 {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: #edda90;
+  margin-top: 10px auto;
+}
+.P4 {
+  color: #fff;
+  font-family: 'Domine', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2em;
+  text-align: center;  
+  max-width: 300px;
+  padding: 16px; 
+  box-sizing: border-box;
+  margin: auto;
+}
+
+
+
+/* styles for navigation*/
+.header {
+  background: #666;
+  min-height: 50px;  
+  width: 100%;
+  position: fixed;
+  top: 0;
+  
+}
+.hamburger {
+  position: fixed;  
+  right: 25px;
+  border: none;
+  background: none;  
+  color: #fff;
+}
+
+.navigation {
+  padding: 16px;
+  display: none;
+  
+  &__link {
+      color: #fff;
+      display: block;
+      margin: 0 0 16px;
+      font-size: 12px;
+      text-align: center;
+  }
+  &__link:hover{
+  color: tomato;
+  }  
+  &--open {
+    display: block;
+    text-align: center;
+    }
+  
+}
+
+@media (min-width: 800px){
+  .header {
+    display: flex;
+    margin: 0 auto;
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background: #666;
+    min-height: 50px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hamburger {
+    display: none;
+    position: absolute;
+    color: #fff;
+    top: 19px;
+    right: 25px;
+    border: none;
+    background: none;
+    justify-content: flex-end;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30px;
+    justify-content: space-between;    
+    margin: 0 auto;
+    min-width: 500px;
+  }  
+  .navigation__link {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 19px;
+    
+    margin: auto;
+    min-width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;    
+    letter-spacing: 2.7px;
+  }
+  .map-box {
+    width: 100%;  
+    display: flex;  
+    justify-content: center;  
+    box-sizing: border-box; 
+    background: none;
+    height: 400px; 
+    flex-wrap: wrap;  
+  }
+  .map {
+    width: 800px;
+    height: 100%;
+    margin: 0;  
+    padding-left: 30px;
+  }
+  .opinion{
+    width: 100%; 
+    background: #f1ffe7;
+   flex-wrap: wrap;
+   min-height: 200px;
+ }
+ 
+.quote-inside {
+  min-height: 150px;
+  max-width: 200px;
   margin: 25px auto 25px auto;
   overflow: auto;
   border-radius: 5px;
-  padding: 20px;
-  box-shadow: 5px 5px 5px #edda90;
+  padding: 20px;  
   text-align: center;
-  font-size: 25px;
+  font-size: 16px;
   font-family: "Akaya Kanadaka", sans-serif;
-  color: #fff;
+  color: black;
   top: 50%;
 }
-
-.statute {
-  color: #fff;  
-  display: inline-block;
-  overflow: auto;
-  padding: 20px;  
-  margin: 25px auto 25px auto;
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 30px;
+.P7 {
+  
+  color: black;
   
 }
-ul{
-  list-style-type: disc;
+.social {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+  min-width: 450px;  
 }
-li{
-  margin: 16px 0px;
+  
 }
