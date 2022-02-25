@@ -3,7 +3,10 @@
 @import "modules/hello.scss";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Lobster&family=Noto+Serif+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Kaushan+Script&family=Lobster&family=Noto+Serif+Display:ital,wght@1,700&display=swap');
+
 html {
   
 }
@@ -40,8 +43,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-top: 60px;  
-  min-height: 500px; 
+  margin-top: 60px auto 20px auto;  
+ 
 }
 .skaza-top {
   width: 100%;  
@@ -58,8 +61,12 @@ a {
   text-decoration: none;
   font-size: 30px;
 }
+
 h1 {
-  font-family: "Akaya Kanadaka", sans-serif;
+  font-family: 'Domine', serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif Display', serif;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
@@ -68,6 +75,17 @@ h1 {
   padding: 16px;
 }
 h2 {
+  font-family: 'Domine', serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #edda90;
+  margin-bottom: 20px;
+  padding: 16px;
+}
+h3 {
   font-family: "Akaya Kanadaka", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -76,14 +94,19 @@ h2 {
   margin: 16px;
   padding: 16px;
 }
+.main_logo {
+  display: block;
+  margin: 0px auto;
+  max-width: 430px; 
+}
 .logo {
   display: block;
   margin: 0px auto;
-  max-width: 230px;
- 
+  max-width: 230px; 
 }
 .img-logo {   
-  height: auto;   
+  height: auto; 
+  margin-top: 100px;  
   max-width: 100%;    
   overflow: auto;
 }
@@ -95,6 +118,7 @@ h2 {
   color: #edda90;
   margin: 16px;
   padding: 16px;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 /* styles for gallery page*/
 .box1 {
@@ -113,6 +137,7 @@ h2 {
   justify-content: space-around;
   max-width: 240px;
   overflow: auto;
+  border-radius: 16px;
   margin: 16px; 
   background: rgb(2,0,36);
   background: linear-gradient(41deg, 
@@ -150,6 +175,7 @@ h2 {
   line-height: 1.6em;
   text-align: center;
   color: white;  
+  margin: 10px;
   
 }
 .img-fluid {
@@ -165,24 +191,28 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
   min-height: 300px;
-  max-width: 400px;
+  max-width: 600px;
   color: tomato;
   margin: 20px auto;
   padding: 16px;
 }
 .box-bright{
-  background: #f1ffe7;
-  width: 100%;
+  background: #BDBDBD;
+  width: 100%;  
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;  
-  box-sizing: border-box; 
+  
 }
 .about {
   width: 100%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   min-height: 300px;
+  margin: 10px auto;
     
 }
 .P5{
@@ -191,8 +221,7 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   line-height: 3em;
-  text-align: center;  
-  
+  text-align: center;    
   max-width: 700px;
   padding: 16px; 
   box-sizing: border-box;
@@ -239,71 +268,66 @@ h2 {
 
 
 /* styles for price page*/
+.book{
+  display: flex;  
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
 .grid {
+  display: flex;
   flex-direction: column;
-  display: grid;
-  grid-template-areas:
-    " article article article . center center center . aside aside aside "
-    " article article article . center center center . aside aside aside "
-    " article article article . center center center . aside aside aside "
-    " article article article . center center center . aside aside aside "
-    " article article article . center center center . aside aside aside "
-    " article article article . center center center . aside aside aside "
-    "..........."
-    " price price price price price price price . exchange exchange exchange "
-    " price price price price price price price . exchange exchange exchange "
-    " price price price price price price price . exchange exchange exchange ";
-  /*ustawiamy w ile kolumn ma być w wierszu*/
-  grid-template-columns: repeat(11, 1fr);
-  column-gap: 16px;
-  row-gap: 16px;
-  grid-template-rows: minmax(100px, auto);
-  margin: 16px;
-  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 .article {
-  grid-column-start: 1;
-  grid-column-end: span 3;
-  grid-row-start: 1;
-  grid-row-end: 6;
+  max-width: 300px;
+  
 }
 .center {
-  grid-column-start: 5;
-  grid-column-end: span 3;
-  grid-row-start: 1;
-  grid-row-end: 6;
+  max-width: 300px;
+  
 }
 .aside {
-  grid-column-start: 9;
-  grid-column-end: span 3;
-  grid-row-start: 1;
-  grid-row-end: 6;
+  max-width: 300px;
+  
+  
 }
 .bottom-left {
-  grid-column-start: 1;
-  grid-column-end: span 7;
-  grid-row-start: 7;
-  grid-row-end: 9;
+  display: flex;
+  text-align: center;
+  max-width: 300px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+ 
 }
 .exchange {
-  grid-column-start: 9;
-  grid-column-end: span 3;
-  grid-row-start: 7;
-  grid-row-end: 9;
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+ 
 }
+
+
 .P1 {
   font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   color: #edda90;
   margin: 16px;
   padding: 16px;
 }
 .P2 {
   font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   text-align: left;
   color: white;
   margin: 16px;
@@ -313,32 +337,37 @@ h2 {
 ul {
   list-style-type: disc;
 }
-li {
-  margin: 16px 0px;
+li {  
 }
 .footer {
   width: 100%;
   min-height: 500px;
   background-color: #666;
 }
-.statute {
-  color: #fff;
+.statute { 
   display: flex;
   align-items: center;
   max-width: 1200px;
   overflow: auto;
   padding: 20px;
-  margin: 25px auto 25px auto;
+  margin: 25px auto 25px auto;   
+}
+.rules{
+  line-height: 2;
+  color: #fff;
   font-family: "Akaya Kanadaka", sans-serif;
   font-size: 16px;
 }
 /* styles for contact page*/
 .contact {
+  background: #BDBDBD;
   display: flex;
   min-height: 500px;
   flex-wrap: wrap;
   padding: 16px;
   justify-content: space-around;
+  margin: 16px auto 0px auto;
+  
   
   
 }
@@ -346,29 +375,38 @@ li {
   display: inline-block; 
   overflow: auto; 
   padding: 20px;
-  margin: auto;
+  margin: 0;
 }
 .bottom {
+  
   height: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; 
   align-items: center;
-  margin: 16px auto;
+  margin: 16px auto 16px auto;
 }
 .social {
   display: flex;
   flex-wrap: wrap;  
   justify-content: space-around;
   max-width: 250px;  
+  margin: auto;
 }
 .media {
   max-width: 50px;
   max-height: 50px;
+  margin: 0px 32px 0px 32px;
   justify-content: space-between;
+  filter: grayscale(100%) brightness(400%);
+  
+}
+.media:hover {
+  transform: scale(1.2);
+  filter: grayscale(10%);
 }
 .phone {
-  color: #fff;
+  color: black;
   font-family: 'Domine', serif;
   font-size: 16px;
   font-weight: 400;
@@ -384,14 +422,17 @@ li {
   display: flex;  
   justify-content: center;  
   box-sizing: border-box; 
-  background: #f1ffe7;
+  background: #BDBDBD;
   height: 400px; 
   flex-wrap: wrap;  
+  margin: 0%;
 }
 .map {  
   width: 100%;
   height: 100%;
   margin: 0;  
+  background: #BDBDBD;
+  margin: 0%;
   
 }
 .P3 {
@@ -419,11 +460,12 @@ li {
 
 /* styles for navigation*/
 .header {
-  background: #666;
+  background: black;
   min-height: 50px;  
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 2;
   
 }
 .hamburger {
@@ -439,7 +481,7 @@ li {
   display: none;
   
   &__link {
-      color: #fff;
+      color: #edda90;;
       display: block;
       margin: 0 0 16px;
       font-size: 12px;
@@ -456,6 +498,63 @@ li {
 }
 
 @media (min-width: 800px){
+  .img-logo {   
+    height: auto;   
+    max-width: 100%;    
+    overflow: auto;
+  }
+  .top-box {
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px auto 20px auto;  
+    height: 100vh;
+  }
+ 
+  h1 {
+    font-family: 'Domine', serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: #edda90;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+  h2 {
+    font-family: 'Domine', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #edda90;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+  h3 {
+    font-family: "Akaya Kanadaka", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #edda90;
+    margin: 16px;
+    padding: 16px;
+  }
+  .box-bright{
+    background: #BDBDBD;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
   .header {
     display: flex;
     margin: 0 auto;
@@ -464,9 +563,9 @@ li {
     padding: 0px;
     width: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     top: 0;
-    background: #666;
+    background: black;
     min-height: 50px;
     justify-content: space-around;
     align-items: center;
@@ -492,7 +591,7 @@ li {
     min-width: 500px;
   }  
   .navigation__link {
-    color: #fff;
+    color: #edda90;;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -508,23 +607,26 @@ li {
     letter-spacing: 2.7px;
   }
   .map-box {
-    width: 100%;  
+    width: 100%;
+    padding: 0%;
     display: flex;  
     justify-content: center;  
     box-sizing: border-box; 
     background: none;
     height: 400px; 
     flex-wrap: wrap;  
+    margin: 0%;
+    background: #BDBDBD;
   }
   .map {
-    width: 800px;
+    margin: 0%;
     height: 100%;
-    margin: 0;  
+    margin-left: -30px;  
     padding-left: 30px;
+    background: #BDBDBD;
   }
   .opinion{
-    width: 100%; 
-    background: #f1ffe7;
+    width: 100%;     
    flex-wrap: wrap;
    min-height: 200px;
  }
@@ -539,19 +641,85 @@ li {
   text-align: center;
   font-size: 16px;
   font-family: "Akaya Kanadaka", sans-serif;
-  color: black;
+  color: #fff;
   top: 50%;
 }
-.P7 {
-  
-  color: black;
-  
-}
+
 .social {
   display: flex;
   flex-wrap: wrap;  
   justify-content: space-around;
   min-width: 450px;  
 }
-  
+.book{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.grid {
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+  grid-template-rows: minmax(100px, auto);
+  margin: 16px;
+  max-width: 800px;
+}
+.article {
+  max-width: 100%;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.center {
+  max-width: 100%;
+  grid-column-start: 5;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.aside {
+  max-width: 100%;
+  grid-column-start: 9;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.bottom-left {
+  max-width: 100%;
+  grid-column-start: 1;
+  grid-column-end: span 7;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+.exchange {
+  max-width: 100%;
+  grid-column-start: 9;
+  grid-column-end: span 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+.P1 {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #edda90;
+  margin: 16px;
+  padding: 16px;
+}
+.P2 {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  margin: 16px;
+  padding: 16px;
+}
+ 
+
 }
