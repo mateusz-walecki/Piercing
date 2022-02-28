@@ -4,6 +4,8 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Kaushan+Script&family=Lobster&family=Noto+Serif+Display:ital,wght@1,700&family=Oswald:wght@500;700&family=Poppins:ital,wght@1,300&family=Righteous&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Lobster&family=Noto+Serif+Display:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Kaushan+Script&family=Lobster&family=Noto+Serif+Display:ital,wght@1,700&display=swap');
 
@@ -17,6 +19,61 @@ body {
   
   background: $wtf;
 }
+
+
+
+
+.heropanel--video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:500px;
+}
+
+@keyframes gm-slidein {
+from {
+    -webkit-transform:translate3d(-100%,0,0);
+    opacity:0;
+    transform:translate3d(-100%,0,0);
+}
+
+to {
+    -webkit-transform:none;
+    opacity:1;
+    transform:none;
+}
+}
+
+.heropanel__content {
+-moz-animation:gm-slidein 3s 1;
+-ms-animation:gm-slidein 3s 1;
+-o-animation:gm-slidein 3s 1;
+-webkit-animation:gm-slidein 3s 1;
+animation:gm-slidein 3s 1;
+max-width: 100%;
+padding: 0;
+text-align:center;
+}
+
+.heropanel__content h1 {
+  margin: 0%;
+  padding: 0%;
+
+}
+
+.heropanel__content h1 a {
+  font-family: 'Domine', serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFE55C;
+}
+
+
+
 
 /*styles for all pages */
 .box-primary {    
@@ -70,25 +127,33 @@ h1 {
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  color: #edda90;
+  color: #FFE55C;
   margin-bottom: 20px;
   padding: 16px;
 }
 h2 {
   font-family: 'Domine', serif;
+  font-family: 'Kaushan Script', cursive;
   font-family: 'Lobster', cursive;
   font-family: 'Noto Serif Display', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;    
   font-size: 30px;
-  font-weight: 700;
   text-align: center;
-  color: #edda90;
+  color: #FFE55C;
   margin-bottom: 20px;
   padding: 16px;
 }
 h3 {
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-family: 'Domine', serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif Display', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;    
+  font-size: 30px; 
   text-align: center;
   color: black;
   margin: 16px;
@@ -111,14 +176,19 @@ h3 {
   overflow: auto;
 }
 .P7 {
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 30px;
+  font-family: 'Domine', serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif Display', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;    
+  font-size: 20px;   
   font-weight: 700;
   text-align: center;
-  color: #edda90;
+  color: black;
   margin: 16px;
   padding: 16px;
-  text-shadow: black 0.1em 0.1em 0.2em
 }
 /* styles for gallery page*/
 .box1 {
@@ -165,7 +235,7 @@ h3 {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  color: #edda90;
+  color: #FFE55C;
   margin-bottom: 20px;
   padding: 16px;
 }
@@ -188,7 +258,8 @@ h3 {
 /* styles for index page*/
 .description {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   min-height: 300px;
   max-width: 600px;
@@ -197,7 +268,7 @@ h3 {
   padding: 16px;
 }
 .box-bright{
-  background: #BDBDBD;
+  background: #ffffff;
   width: 100%;  
   display: flex;
   flex-direction: column;
@@ -227,6 +298,7 @@ h3 {
   box-sizing: border-box;
   margin: auto;
 }
+
 .P6{
   color: #fff;
   font-family: 'Domine', serif;
@@ -252,13 +324,17 @@ h3 {
   max-width: 200px;
   margin: 25px auto 25px auto;
   overflow: auto;
-  border-radius: 5px;
-  padding: 20px;  
-  text-align: center;
-  font-size: 16px;
-  font-family: "Akaya Kanadaka", sans-serif;
-  color: #fff;
+  border-radius: 10px;
+  padding: 20px;      
   top: 50%;
+  border-radius: 16px;
+  background: black;  
+}
+.P3 {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 16px; 
+  color: #fff;
+  text-align: center;
 }
 .opinion{
   width: 100%;    
@@ -320,7 +396,7 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  color: #edda90;
+  color: #FFE55C;
   margin: 16px;
   padding: 16px;
 }
@@ -366,15 +442,17 @@ li {
   flex-wrap: wrap;
   padding: 16px;
   justify-content: space-around;
-  margin: 16px auto 0px auto;
-  
-  
-  
+  align-items: center;
+  margin: 0 auto 0px auto;
+  height: 100%; 
+    
 }
 .contact-2 {
-  display: inline-block; 
+  display: inline-block;
+  justify-content: center;
+  align-items: center; 
   overflow: auto; 
-  padding: 20px;
+  padding: 0;
   margin: 0;
 }
 .bottom {
@@ -386,24 +464,53 @@ li {
   align-items: center;
   margin: 16px auto 16px auto;
 }
-.social {
+.social {    
+  flex-wrap: wrap;
   display: flex;
-  flex-wrap: wrap;  
   justify-content: space-around;
+  align-items: center;
   max-width: 250px;  
-  margin: auto;
+  min-height: 100px;
+  margin: 16px 0 16px 0;
 }
 .media {
-  max-width: 50px;
+  min-width: 50px;
   max-height: 50px;
-  margin: 0px 32px 0px 32px;
-  justify-content: space-between;
-  filter: grayscale(100%) brightness(400%);
-  
+  margin: 0px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%) brightness(-400%);  
 }
 .media:hover {
   transform: scale(1.2);
   filter: grayscale(10%);
+}
+
+
+.smartphone {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0px ;
+  justify-content: space-between;  
+}
+.smartphone:hover {
+  transform: scale(1.2);
+  filter: grayscale(10%);
+}
+.P5-1{
+  color: black;
+  font-family: 'Domine', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;    
+  max-width: 700px;
+  box-sizing: border-box;
+  margin: auto;
 }
 .phone {
   color: black;
@@ -412,10 +519,10 @@ li {
   font-weight: 400;
   line-height: 1em;
   text-align: justify;  
-  max-width: 100px;
-  padding: 16px; 
+  
+  padding: 0; 
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
 }
 .map-box {
   width: 100%;  
@@ -435,31 +542,27 @@ li {
   margin: 0%;
   
 }
-.P3 {
-  font-family: "Akaya Kanadaka", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  color: #edda90;
-  margin-top: 10px auto;
-}
+
 .P4 {
-  color: #fff;
   font-family: 'Domine', serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 2em;
-  text-align: center;  
-  max-width: 300px;
-  padding: 16px; 
-  box-sizing: border-box;
-  margin: auto;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;  
+    letter-spacing: 6px;  
+    font-size: 30px;    
+    text-align: center;
+    color: #FFE55C;
+    margin-bottom: 20px;
+    padding: 16px;
 }
 
 
 
 /* styles for navigation*/
-.header {
+.nav {
   background: black;
   min-height: 50px;  
   width: 100%;
@@ -481,7 +584,7 @@ li {
   display: none;
   
   &__link {
-      color: #edda90;;
+      color: #FFE55C;;
       display: block;
       margin: 0 0 16px;
       font-size: 12px;
@@ -498,6 +601,7 @@ li {
 }
 
 @media (min-width: 800px){
+  
   .img-logo {   
     height: auto;   
     max-width: 100%;    
@@ -512,6 +616,21 @@ li {
     margin-top: 60px auto 20px auto;  
     height: 100vh;
   }
+  .P7 {
+    font-family: 'Domine', serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;    
+    font-size: 30px;   
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+  }
  
   h1 {
     font-family: 'Domine', serif;
@@ -521,33 +640,43 @@ li {
     font-size: 60px;
     font-weight: 700;
     text-align: center;
-    color: #edda90;
+    color: #FFE55C;
     margin-bottom: 20px;
     padding: 16px;
   }
+  
   h2 {
     font-family: 'Domine', serif;
+    font-family: 'Kaushan Script', cursive;
     font-family: 'Lobster', cursive;
     font-family: 'Noto Serif Display', serif;
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;  
+    letter-spacing: 6px;  
+    font-size: 60px;    
     text-align: center;
-    color: #edda90;
+    color: #FFE55C;
     margin-bottom: 20px;
     padding: 16px;
   }
   h3 {
-    font-family: "Akaya Kanadaka", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Domine', serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-size: 60px;    
+    letter-spacing: 6px;
     text-align: center;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    color: #edda90;
+    color: black;
     margin: 16px;
     padding: 16px;
   }
   .box-bright{
-    background: #BDBDBD;
+    background: #E1E1E1;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -555,7 +684,7 @@ li {
     flex-wrap: wrap;
     justify-content: center; 
   }
-  .header {
+  .nav {
     display: flex;
     margin: 0 auto;
     top: 0;
@@ -591,7 +720,7 @@ li {
     min-width: 500px;
   }  
   .navigation__link {
-    color: #edda90;;;
+    color: #FFE55C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -632,24 +761,31 @@ li {
  }
  
 .quote-inside {
-  min-height: 150px;
+  min-height: 200px;
   max-width: 200px;
   margin: 25px auto 25px auto;
   overflow: auto;
-  border-radius: 5px;
-  padding: 20px;  
-  text-align: center;
-  font-size: 16px;
+  border-radius: 10px;
+  padding: 20px;    
+  justify-content: center;
+  font-size: 16px;  
+ 
+}
+.P3 {
   font-family: "Akaya Kanadaka", sans-serif;
   color: #fff;
-  top: 50%;
+  text-align: center;
+  
 }
-
 .social {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;  
   justify-content: space-around;
-  min-width: 450px;  
+  min-width: 400px;  
+  min-height: 100px;
+  margin: 16px 0 16px 0;
 }
 .book{
   display: flex;
@@ -707,7 +843,7 @@ li {
   font-size: 24px;
   font-weight: 700;
   text-align: left;
-  color: #edda90;
+  color: #FFE55C;
   margin: 16px;
   padding: 16px;
 }
@@ -720,6 +856,96 @@ li {
   margin: 16px;
   padding: 16px;
 }
+.contact {
+  background: #BDBDBD;
+  display: flex;
+  min-height: 500px;
+  flex-wrap: wrap;
+  padding: 16px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 16px auto 0px auto;
+  height: 100vh; 
+    
+}
+.contact-2 {
+  display: inline-block; 
+  overflow: auto; 
+  padding: 20px;
+  margin: 0;
+}
  
 
 }
+
+@media (min-width: 600px){
+  .heropanel--video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    @keyframes gm-slidein {
+    from {
+        -webkit-transform:translate3d(0,-100%,0);
+        opacity:0;
+        transform:translate3d(0,-100%,0);
+    }
+    
+    to {
+        -webkit-transform:none;
+        opacity:1;
+        transform:none;
+    }
+    }
+    
+    .heropanel__content {
+    -moz-animation:gm-slidein 3s 1;
+    -ms-animation:gm-slidein 3s 1;
+    -o-animation:gm-slidein 3s 1;
+    -webkit-animation:gm-slidein 3s 1;
+    animation:gm-slidein 3s 1;
+    max-width: 600px;
+    text-align:center;
+    margin: auto;
+    padding: 0;
+    }
+    
+    .heropanel__content h1 {
+    margin:0 0 .5em;
+    
+    
+    }
+    
+    .heropanel__content h1 a {
+      font-family: 'Domine', serif;
+      font-family: 'Kaushan Script', cursive;
+      font-family: 'Lobster', cursive;
+      font-family: 'Noto Serif Display', serif;
+      font-size: 60px;
+      font-weight: 700;
+      text-align: center;
+      color: #FFE55C;
+      margin-bottom: 20px;
+      padding: 16px;
+    
+    }
+    .media {
+      min-width: 50px;
+      max-height: 50px;
+      margin: 0% ;
+      padding: 0%;
+      filter: grayscale(100%) brightness(-400%);  
+    }
+    .media:hover {
+      transform: scale(1.2);
+      filter: grayscale(10%);
+    }
+    .social-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    }
+  }
