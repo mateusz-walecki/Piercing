@@ -1,0 +1,72 @@
+.gallery{
+    width: 100%;  
+    margin: auto;  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding: 10;
+    overflow: auto;
+  }
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: auto auto 50px auto;
+    padding: 16px;
+  }
+  .box2 {
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 240px;
+    overflow: auto;
+    border-radius: 16px;
+    margin: 16px; 
+    background: rgb(2,0,36);
+    background: linear-gradient(41deg, 
+                rgba(2,0,36,1) 0%, rgba(173,182,196,1) 0%, 
+                rgba(0,212,255,0.039653361344537785) 0%);
+    &__inside{
+      font-family: "Akaya Kanadaka", sans-serif;
+      font-size: 16px; 
+      color: #fff;
+      text-align: center;
+    }
+    &__name{
+      font-family: 'Courgette', cursive;
+      font-family: 'Domine', serif;
+      font-family: 'Kaushan Script', cursive;
+      font-family: 'Lobster', cursive;
+      font-family: 'Noto Serif Display', serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Righteous', cursive;
+      font-size: 20px;  
+      text-align: center;
+      color: #FFE55C;
+      margin-bottom: 20px;
+      padding: 16px;
+    }
+    &__glide{
+      align-items: flex-end;
+    }
+    &__bottom{
+    margin: 0%;
+    padding: 0%;
+    }
+    &__requirements{
+    font-family: "Akaya Kanadaka", sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    text-align: left;
+    color: white;  
+    margin: 10px;
+    }
+  }
+  

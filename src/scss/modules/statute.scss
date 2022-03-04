@@ -1,0 +1,20 @@
+
+.statute { 
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 20px;
+    margin: 25px auto 25px auto;  
+    &__rules{
+        line-height: 2;
+        color: #fff;
+        font-family: "Akaya Kanadaka", sans-serif;
+        font-size: 16px;
+    } 
+}
+ul {
+    list-style-type: disc;
+  }
+li {  
+}
