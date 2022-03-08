@@ -12,7 +12,10 @@ justify-content: space-around;
     }
 }
 .article {
-    max-width: 300px;    
+    max-width: 300px;   
+    display: block;
+    justify-content: center;
+    align-items: flex-start; 
 }
 .center {
 max-width: 300px;
@@ -63,8 +66,8 @@ padding: 16px;
         align-items: center;
         justify-content: space-around;
         &__columns{
-            flex-direction: column;
         display: grid;
+        align-items: flex-start;
         grid-template-columns: repeat(11, 1fr);
         column-gap: 16px;
         row-gap: 16px;
