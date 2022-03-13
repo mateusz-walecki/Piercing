@@ -74,7 +74,7 @@ text-align:center;
   text-align: center;
   color: #FFE55C;
 }
-.box-primary {    
+body {    
   width: 100%;
   display: flex;     
   flex-wrap: wrap;
@@ -203,21 +203,6 @@ h3 {
   margin: 16px;
   padding: 16px;
 }
-.P7 {
-  font-family: 'Domine', serif;
-  font-family: 'Kaushan Script', cursive;
-  font-family: 'Lobster', cursive;
-  font-family: 'Noto Serif Display', serif;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Righteous', cursive;    
-  font-size: 20px;   
-  font-weight: 700;
-  text-align: center;
-  color: black;
-  margin: 16px;
-  padding: 16px;
-}
 .studio{
   background: #E1E1E1;
   width: 100%;  
@@ -256,12 +241,26 @@ h3 {
   font-family: 'Domine', serif;
   font-size: 16px;
   font-weight: 400;
+  max-height: 100px;
   line-height: 3em;
   text-align: center;    
   max-width: 700px;
-  padding: 16px; 
   box-sizing: border-box;
-  margin: auto;
+  margin: 16px auto;
+}
+.P7 {
+  font-family: 'Domine', serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif Display', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;    
+  font-size: 20px;   
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin: 16px;
 }
 .quote {
   width: 100%;    
@@ -351,6 +350,14 @@ h3 {
     min-height: 100px;
     margin: 16px 0 16px 0;
   }
+  &__link{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 250px;  
+    min-height: 100px;
+  }
   &__number{
     color: black;
     font-family: 'Domine', serif;
@@ -364,6 +371,8 @@ h3 {
     max-width: 700px;
     box-sizing: border-box;
     margin: auto;
+    max-width: 250px;  
+    min-height: 100px;
   }
   &__media {
     min-width: 50px;
@@ -401,6 +410,7 @@ h3 {
     margin: 0;
   }
 }
+
 .map-box {
   width: 100%;  
   display: flex;  
@@ -438,19 +448,35 @@ h3 {
   padding: 16px;
   display: none;  
   &__link {
-      font-family: 'Domine', serif;
-      font-family: 'Kaushan Script', cursive;
-      font-family: 'Lobster', cursive;
-      font-family: 'Noto Serif Display', serif;
-      font-family: 'Oswald', sans-serif;
-      font-family: 'Poppins', sans-serif;
-      font-family: 'Righteous', cursive;
-      color: #FFE55C;
-      display: block;
-      margin: 0 0 16px;
-      font-size: 16px;
-      text-align: center;
+    font-family: 'Domine', serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
+    color: #FFE55C;
+    display: block;
+    margin: 0 0 16px;
+    font-size: 16px;
+    text-align: center;
   }
+  &__current {
+    font-family: 'Domine', serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
+    color: #FFE55C;
+    display: block;
+    
+    margin: 0 0 16px;
+    font-size: 16px;
+    text-align: center;
+  }
+
   &__link:hover{
   color: tomato;
   }  
@@ -545,9 +571,22 @@ footer{
     font-weight: 700;
     text-align: center;
     color: black;
-    margin: 0px;
-    padding: 0px;
+    margin: 16px;
+   
   } 
+  .P5{
+    color: black;
+    font-family: 'Domine', serif;
+    font-size: 16px;
+    font-weight: 400;
+    max-height: 100px;
+    line-height: 3em;
+    text-align: center;    
+    max-width: 700px;
+    padding: 16px; 
+    box-sizing: border-box;
+    margin: 16px auto;
+  }
   h1 {
     font-family: 'Domine', serif;
     font-family: 'Kaushan Script', cursive;
@@ -678,6 +717,26 @@ footer{
       font-size: 16px;    
       letter-spacing: 2.7px;
     }
+    &__current {
+      color: #FFE55C;
+      display: flex;
+      border-bottom: 2px solid #FFE55C;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 19px;    
+      margin: auto;
+      min-width: 100px;
+      font-family: 'Domine', serif;
+      font-family: 'Kaushan Script', cursive;
+      font-family: 'Lobster', cursive;
+      font-family: 'Noto Serif Display', serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Righteous', cursive;
+      font-size: 16px;    
+      letter-spacing: 2.7px;
+    }
   }
   .map-box {
     width: 100%;
@@ -742,10 +801,18 @@ footer{
       align-items: center;
       flex-wrap: wrap;  
       justify-content: space-around;
-      min-width: 400px;  
+      min-width: 250px;  
       min-height: 100px;
-      margin: 16px 0 16px 0;
+      margin: 0 auto 0 auto;
     }  
+    &__link{ 
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 250px;  
+      min-height: 64px;  
+    }
     &__number{
       color: black;
       font-family: 'Domine', serif;
@@ -759,6 +826,8 @@ footer{
       max-width: 700px;
       box-sizing: border-box;
       margin: auto;
+      max-width: 250px;  
+      min-height: 100px;
     }
     &__media {
       min-width: 50px;

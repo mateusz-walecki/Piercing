@@ -17,21 +17,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
-  <div class="box-primary">
-
-    <section class="nav">
+<body> 
+    <nav class="nav">
       <button class="hamburger hamburger--js" aria-label="Open menu">
         <img src="../assets/img/hamburger.png" alt="hamburger">
       </button>
 
-      <nav class="navigation navigation--js">
-        <a class="navigation__link" href="index.html"> O NAS </a>
-        <a class="navigation__link" href="statute.html"> REGULAMIN </a>
-        <a class="navigation__link" href="gallery.html"> GALERIA </a>
-        <a class="navigation__link" href="price.html"> CENNIK </a>
-      </nav>
-    </section>
+      <ul class="navigation navigation--js">
+        <li><a class="navigation__current" href="index.html"> O NAS </a></li>
+        <li><a class="navigation__link" href="statute.html"> REGULAMIN </a></li>
+        <li><a class="navigation__link" href="gallery.html"> GALERIA </a></li>
+        <li><a class="navigation__link" href="price.html"> CENNIK </a></li>
+      </ul>
+    </nav>
     <main class="main">
 
       <section class="company">
@@ -91,7 +89,8 @@
           </h3>
           <div class="contact__social">
             <div>
-              <a class="social-1" href="https://www.facebook.com/SkazaPiercingWielun/">
+              <a class="social__link" 
+                href="https://www.facebook.com/SkazaPiercingWielun/">
                 <img src="../assets/img/fb1.svg" class="contact__media" alt="fb" />
               </a>
             </div>
@@ -189,7 +188,5 @@
         Created by: Mateusz Walęcki
       </a>
     </footer>
-  </div>
 </body>
-
 </html>

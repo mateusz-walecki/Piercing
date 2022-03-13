@@ -9,54 +9,92 @@ justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin: 16px;
     }
 }
-.article {
+.ear {
     max-width: 300px;   
     display: block;
     justify-content: center;
     align-items: flex-start; 
 }
+.tariff{
+  font-family: 'Domine', serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Noto Serif Display', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;    
+  font-size: 40px;
+  letter-spacing: 6px;
+  text-align: center;
+  color: #FFE55C;
+  margin-bottom: 20px;
+  padding: 16px;
+}
+.ear {
+  max-width: 2200px; 
+  }
 .center {
-max-width: 300px;
+  max-width: 2200px;
 }
-.aside {
-max-width: 300px; 
-}
-.bottom-left {
+.lip {
+  max-width: 220px;
+  padding: 8px;
+  text-align: justify;
+  }
+
+.bottom {
 display: flex;
 text-align: center;
-max-width: 300px;
+max-width: 220px;
 flex-direction: column;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-around; 
+margin: 8px;
+padding: 8px;
+}
+
+.info{
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  margin: 16px;
+  padding: 0 ;
+  width: 100%;
+
+  
 }
 .exchange {
-display: flex;
-max-width: 300px;
-flex-direction: column;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-around; 
+  display: flex;
+  max-width: 220px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; 
 }
-.P1 {
-font-family: "Akaya Kanadaka", sans-serif;
-font-size: 24px;
-font-weight: 700;
-text-align: center;
-color: #FFE55C;
-margin: 16px;
-padding: 16px;
+.list {
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFE55C;
+  margin: 0 auto 0 auto;
+  padding: 0 auto 0 auto;
 }
 .P2 {
-font-family: "Akaya Kanadaka", sans-serif;
-font-size: 16px;
-font-weight: 500;
-text-align: left;
-color: white;
-margin: 16px;
-padding: 16px; 
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  color: white;
+  margin: 16px;
+  padding: 0 ;
 }
   
 @media (min-width: 800px){
@@ -66,23 +104,23 @@ padding: 16px;
         align-items: center;
         justify-content: space-around;
         &__columns{
-        display: grid;
-        align-items: flex-start;
-        grid-template-columns: repeat(11, 1fr);
-        column-gap: 16px;
-        row-gap: 16px;
-        grid-template-rows: minmax(100px, auto);
-        margin: 16px;
-        max-width: 800px;
+          display: grid;
+          align-items: flex-start;
+          grid-template-columns: repeat(11, 1fr);
+          column-gap: 16px;
+          row-gap: 16px;
+          grid-template-rows: minmax(100px, auto);
+          margin: 16px;
+          max-width: 1000px;
         }
     } 
-    .article {
+      .ear {
         max-width: 100%;
         grid-column-start: 1;
         grid-column-end: span 3;
         grid-row-start: 1;
         grid-row-end: 6;
-      }
+        }
       .center {
         max-width: 100%;
         grid-column-start: 5;
@@ -90,19 +128,31 @@ padding: 16px;
         grid-row-start: 1;
         grid-row-end: 6;
       }
-      .aside {
+      .lip {
         max-width: 100%;
+        margin: auto;
+        padding: auto;
         grid-column-start: 9;
         grid-column-end: span 3;
         grid-row-start: 1;
         grid-row-end: 6;
       }
-      .bottom-left {
+      .bottom {
         max-width: 100%;
         grid-column-start: 1;
         grid-column-end: span 7;
         grid-row-start: 7;
-        grid-row-end: 9;
+        grid-row-end: 9;        
+      }
+      .info{
+        font-family: "Akaya Kanadaka", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        color: white;
+        width: 100%;
+        margin: 16px;
+        padding: 0;
       }
       .exchange {
         max-width: 100%;
@@ -111,14 +161,15 @@ padding: 16px;
         grid-row-start: 7;
         grid-row-end: 9;
       }
-      .P1 {
+      .list {
         font-family: "Akaya Kanadaka", sans-serif;
+        letter-spacing: 3px;
         font-size: 24px;
         font-weight: 700;
         text-align: left;
         color: #FFE55C;
-        margin: 16px;
-        padding: 16px;
+        margin: 0 auto 0 auto;
+        padding: 0 auto 0 auto;
       }
       .P2 {
         font-family: "Akaya Kanadaka", sans-serif;
@@ -127,7 +178,8 @@ padding: 16px;
         text-align: left;
         color: white;
         margin: 16px;
-        padding: 16px;
+        padding: 0;
       }
+
 }
  
