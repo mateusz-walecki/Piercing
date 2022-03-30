@@ -246,6 +246,7 @@ h3 {
   text-align: center;    
   max-width: 700px;
   box-sizing: border-box;
+  padding: 0%;
   margin: 16px auto;
 }
 .P7 {
@@ -325,14 +326,13 @@ h3 {
 }
 .contact {
   background: #BDBDBD;
-  display: flex;
-  min-height: 500px;
+  display: flex;  
   flex-wrap: wrap;
   padding: 16px;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto 0px auto;
-  height: 100%;     
+  height: 100vh;     
   &__box{
     display: inline-block;
     justify-content: center;
@@ -342,13 +342,20 @@ h3 {
     margin: 0;
   }
   &__social{
-    flex-wrap: wrap;
+    color: black;
+    font-family: 'Domine', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3em;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    text-align: center;    
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: auto;
     max-width: 250px;  
     min-height: 100px;
-    margin: 16px 0 16px 0;
   }
   &__link{
     flex-wrap: wrap;
@@ -381,6 +388,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     filter: grayscale(100%) brightness(-400%);  
     &:hover {
       transform: scale(1.2);
@@ -403,8 +411,7 @@ h3 {
     font-size: 16px;
     font-weight: 400;
     line-height: 1em;
-    text-align: justify;  
-    
+    text-align: justify;      
     padding: 0; 
     box-sizing: border-box;
     margin: 0;
@@ -583,7 +590,7 @@ footer{
     line-height: 3em;
     text-align: center;    
     max-width: 700px;
-    padding: 16px; 
+    padding: 0px; 
     box-sizing: border-box;
     margin: 16px auto;
   }
@@ -782,7 +789,6 @@ footer{
 .contact {
   background: #BDBDBD;
   display: flex;
-  min-height: 500px;
   flex-wrap: wrap;
   padding: 16px;
   justify-content: space-around;
@@ -796,14 +802,20 @@ footer{
       margin: 0;
     }  
     &__social{
+      color: black;
+      font-family: 'Domine', serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 3em;
       display: flex;
-      justify-content: center;
       align-items: center;
-      flex-wrap: wrap;  
-      justify-content: space-around;
-      min-width: 250px;  
+      justify-content: center;
+      text-align: center;    
+      max-width: 700px;
+      box-sizing: border-box;
+      margin: auto;
+      max-width: 250px;  
       min-height: 100px;
-      margin: 0 auto 0 auto;
     }  
     &__link{ 
       flex-wrap: wrap;
@@ -833,7 +845,7 @@ footer{
       min-width: 50px;
       max-height: 50px;
       margin: 0% ;
-      padding: 0%;
+      padding: 10px;
       filter: grayscale(100%) brightness(-400%);  
       &:hover {
         transform: scale(1.2);
